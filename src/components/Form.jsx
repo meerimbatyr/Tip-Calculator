@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import Tip from "./Tip";
+import styled from "styled-components";
 
 class Form extends Component {
   constructor() {
@@ -34,10 +35,21 @@ class Form extends Component {
   };
 
   render() {
+    const MainTitle = styled.p`
+      background-color: #1f030c;
+      color: white;
+      width: 100%;
+      text-align: center;
+      margin-top: 0;
+      border-top-left-radius: 0.8rem;
+      border-top-right-radius: 0.8rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    `;
     const { billValue, selectValue, numberOfPeople, tips } = this.state;
     return (
       <form className="container" onSubmit={this.handleSubmit}>
-        <h3>TIP CALCULATOR</h3>
+        <MainTitle>TIP CALCULATOR</MainTitle>
         <label htmlFor="bill">How much was your bill?</label>
         <div>
           $

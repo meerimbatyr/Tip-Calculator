@@ -10,18 +10,6 @@ form {
   border-radius: 0.8rem;
 }
 
-h3 {
-  background-color: #1f030c;
-  color: white;
-  width: 100%;
-  text-align: center;
-  margin-top: 0;
-  border-top-left-radius: 0.8rem;
-  border-top-right-radius: 0.8rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 input,
 select {
   width: 60%;
@@ -58,20 +46,6 @@ div {
 #submit:hover {
   background: #790804;
   transform: scale(1.025);
-}
-
-p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.tip-amount {
-  font-size: 2rem;
 }
 
 span {
