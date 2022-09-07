@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  margin: 3rem auto;
+  background-color: #f7f7f7;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.8rem;
+}
+
+h3 {
+  background-color: #1f030c;
   color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+select {
+  width: 60%;
+  padding: 0.5rem;
+  border: 1.5px solid black;
+  margin-bottom: 0.7rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 0.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#numberOfPeople {
+  color: red;
+}
+
+label,
+div {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+#submit {
+  background: linear-gradient(to right, #1c1b1a, #790804);
+  color: white;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: linear 0.5s;
+}
+
+#submit:hover {
+  background: #790804;
+  transform: scale(1.025);
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.tip-amount {
+  font-size: 2rem;
+}
+
+span {
+  font-size: 1.2rem;
 }
